@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Customer Information</title>
+</head>
+<body>
+  <div class="header-content"><br><br><br>
+    <header class="header">
+      <div class="logo-toggle">
+        <img class="logo" src="https://prime.rw/public/themes//assets/img/svg/nav-logo-icon.svg" alt="">
+        <div class="toggle-icon" id="toggleNav">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="https://prime.rw/#">News</a></li>
+          <li><a href="https://prime.rw/#">Careers</a></li>
+          <li><a href="family.html">Family</a></li>
+          <li><a href="employee.html">Employee</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="customer.html">Customer-Information</a></li>
+        </ul>
+      </nav>
+      <div class="prime-icon" id="togglePrime">
+        <img src="https://prime.rw/public/themes/assets/img/svg/contact-icon-2.svg" alt="">
+        <img src="https://prime.rw/public/themes/assets/img/svg/language-icon-2.svg" alt="">
+        <img src="https://prime.rw/public/themes/assets/img/svg//icons-search-2.svg" alt="">
+      </div>
+    </header>
+  </div><br>
+  <div class="customer-information">
+    <div class="customer-information-container">
+      <div class="customer-information-input">
+        <h1 class="heading">Customer Information</h1>
+        <form action="" class="customer-information-form">
+          <div class="labels">
+            <label for="Customer_id">Customer ID:</label>
+            <input type="number" name="customer" id="customerId">
+          </div>
+          <div class="labels">
+              <label for="salutation">Salutation:</label>
+              <select name="salutation" id="salutation">
+                <option value="miss">Miss</option>
+                <option value="miss">Mister</option>
+                <option value="miss">Mrs</option>
+                <option value="miss">Miss/Mrs</option>
+                <option value="miss">Company</option>
+              </select>
+
+          </div>
+          <div class="labels">
+              <label for="customer-name">Customer Name:</label>
+              <input type="text" name="customerName" id="customerName">
+
+          </div>
+          <div class="labels">
+              <label for="surname">Surname:</label>
+              <input type="text" name="surname" id="surName">
+          </div>
+          <div class="labels">
+              <label for="forename_1">First Name:</label>
+              <input type="text" name="forename_1" id="foreName_1">
+          </div>
+          <div class="labels">
+              <label for="forename_2">Middle Name:</label>
+              <input type="text" name="forename_2" id="foreName_2">
+          </div>
+          <div class="labels">
+              <label for="Customer_Acronym">Short Name:</label>
+              <input type="text" name="shortName" id="customerAcronym">
+            </div>
+          <div class="labels">
+              <label for="Vision_OUC">Customer's branch:</label>
+              <input type="text" name="customerBranch" id="Vision_OUC">
+          </div>
+          <div class="labels">
+            <!-- <div> -->
+              <label for="Vision_SBU">Customer's business segment:</label>
+              <select name="VisionSBU" id="Vision_SBU">
+                <option value="Micro Enterprises">Micro Enterprises</option>
+                <option value="Small Enterprises">Small Enterprises</option>
+                <option value="Medium Enterprises">Medium Enterprises</option>
+                <option value="Large Enterprises">Large Enterprises</option>
+                <option value="Retail or Individuals">Retail or Individuals</option>
+                <option value="organisations">NGOs, charity/welfare organisations</option>
+                <option value="Business Groups/Community">Business Groups/Community</option>
+                <option value="Others">Others</option>
+              </select>
+          </div>
+          <div class="labels">
+              <label for="Customer_Open_Date">Customer Open Date:</label>
+              <input type="date" name="CustomerOpenDate" id="Customer_Open_Date">
+          </div>
+          <div class="labels">
+              <label for="Customer_Gender">Customer Gender:</label>
+              <select name="CustomerGender" id="Customer_Gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="corporate">Corporate</option>
+              </select>
+          </div>
+          <div class="labels">
+              <label for="Date_of_Birth">Date of Birth:</label>
+              <input type="date" name="Date_of_Birth" id="Date_of_Birth">
+          </div>
+          <div class="labels">
+              <label for="Place_of_Birth">Place of Birth</label>
+              <select name="Place_of_Birth" id="Place_of_Birth"></select>
+          </div>
+          <div class="labels">
+            <label for="Village">Village:</label>
+            <select name="Village" id="village"></select>
+          </div>
+          <div class="labels">
+              <label for="Marital_Status">Marital Status:</label>
+              <select name="Marital_Status" id="Marital_Status">
+                <option value="married">Married</option>
+                <option value="widowed">Widowed</option>
+                <option value="separated">Separated</option>
+                <option value="divorced">Divorced</option>
+                <option value="single">Single</option>
+              </select>
+          </div>
+          <div class="labels">
+              <label for="spousename">Spouse Name:</label>
+              <input type="text" name="spousename" id="spouseName">
+          </div>
+          <div class="labels">
+              <label for="Social_Economic_Class">Social_Economic_Class:</label>
+              <select name="Social_Economic_Class" id="Social_Economic_Class">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+          </div>
+          <div class="labels">
+              <label for="Next_of_kin_Name">Name of Next of Kin:</label>
+              <input type="text" name="Next_of_kin_Name" id="Next_of_kin_Name">
+          </div>
+          <div class="labels">
+              <label for="Next_of_kin_ID_Type">Next of kin ID Type:</label>
+              <select name="Next_of_kin_ID_Type" id="Next_of_kin_ID_Type">
+                <option value="">Driving_License</option>
+                <option value="National_ID">National_ID  (Mandatory for Rwandan Nationals)</option>
+                <option value="Refugee ID">Refugee ID</option>
+                <option value="Passport">Passport</option>
+                <option value="Foreigner's ID">Foreigner's ID</option>
+                <option value="Registration Number">Registration Number (For companies only)</option>
+              </select>
+          </div>
+          <div class="labels">
+              <label for="Next_of_kin_ID_Number">Next of kin ID Number:</label>
+              <input type="number" name="Next_of_kin_ID_Number" id="Next_of_kin_ID_Number">
+          </div>
+          <div class="labels">
+              <label for="Next_of_kin_Telephone">Next of kin Telephone:</label>
+              <input type="number" name="Next_of_kin_Telephone" id="Next_of_kin_Telephone">
+          </div>
+          <div class="labels">
+              <label for="Next_of_kin_Email_ID">Next of kin Email:</label>
+              <input type="number" name="Next_of_kin_Email_ID" id="Next_of_kin_Email_ID">
+          </div>
+          <div class="labels">
+              <label for="Number_Of_Dependants">Number of Dependents:</label>
+              <input type="number" name="Number_Of_Dependents" id="Number_Of_Dependants">
+          </div>
+          <div class="labels">
+            <label for="Nationality">Nationality:</label>
+            <select name="Nationality" id="CountryList"></select>
+          </div>
+          <div class="labels">
+            <label for="Residence">Residence:</label>
+            <select name="Residence" id="Residence"></select>
+          </div>
+          <div class="labels">
+              <label for="Comm_Address_1">Customer Communication Address Line1:</label>
+              <input type="text" name="Comm_Address_1" id="Comm_Address_1">
+          </div>
+          <div class="labels">
+              <label for="Comm_Address_2">Customer Communication Address Line2:</label>
+              <input type="text" name="Comm_Address_2" id="Comm_Address_2">
+          </div>
+          <div class="labels">
+              <label for="Comm_Village">Customer Communication Village:</label>
+              <select name="Comm_Village" id="Comm_Village"></select>
+          </div>
+          <div class="labels">
+              <label for="Comm_Country">Customer Communication Country:</label>
+              <select name="Comm_Country" id="Comm_Country"></select>
+          </div>
+          <div class="labels">
+              <label for="Comm_Residence_Type">Customer Communication Residence Type:</label>
+              <select name="Comm_Residence_Type" id="Comm_Residence_Type">
+                <option value="Owner">Owner</option>
+                <option value="Tenant">Tenant</option>
+              </select>
+          </div>
+          <div class="labels">
+              <label for="Perm_Address_1">Permanent Address line 1:</label>
+              <input type="text" name="Perm_Address_1" id="Perm_Address_1">
+          </div>
+          <div class="labels">
+              <label for="Perm_Address_2">Permanent Address line 2:</label>
+              <input type="text" name="Perm_Address_2" id="Perm_Address_2">
+          </div>
+          <div class="labels">
+              <label for="Perm_Village">Permanent Village:</label>
+              <select name="Perm_Village" id="Perm_Village"></select>
+          </div>
+          <div class="labels">
+              <label for="Perm_Country">Permanent Country:</label>
+              <select name="Perm_Country" id="Perm_Country"></select>
+          </div>
+          <div class="labels">
+              <label for="Email_ID">Email ID:</label>
+              <input type="email" name="email" id="Email_ID">
+          </div>
+          <div class="labels">
+              <label for="Work_Telephone">Work Telephone:</label>
+              <input type="number" name="Work_Telephone" id="Work_Telephone">
+          </div>
+          <div class="labels">
+              <label for="Home_Telephone">Home Telephone:</label>
+              <input type="number" name="Home_Telephone" id="Home_Telephone">
+          </div>
+          <div class="labels">
+              <label for="Fax_Number_1">Fax_Number_1:</label>
+              <input type="number" name="Fax_Number_1" id="Fax_Number_1">
+          </div>
+          <div class="labels">
+              <label for="Fax_Number_2">Fax_Number_2:</label>
+              <input type="number" name="Fax_Number_2" id="Fax_Number_2">
+          </div>
+          <div class="labels">
+              <label for="Education">Education:</label>
+              <select name="Education" id="Education">
+                <option value="PHD">PHD</option>
+                <option value="Masters">Masters</option>
+                <option value="Bachelors Degree">Bachelors Degree</option>
+                <option value="Diploma">Diploma (A2 or A1 level)</option>
+                <option value="School">School attendace below A2 level</option>
+                <option value="High School">High School</option>
+                <option value="Primary School">Primary School</option>
+                <option value="Below Primary">Below Primary</option>
+                <option value="Below Primary">Below Primary</option>
+                <option value="Professional-Certificates">Professional Certificates</option>
+              </select>
+          </div>
+          <div class="labels">
+              <label for="Customer_TIN">Customer Tax Identification Number:</label>
+              <input type="number" name="Customer_TIN" id="Customer_TIN">
+          </div>
+          <div class="labels">
+              <label for="NAICS_Code">NAICS Code:</label>
+              <select name="NAICS_Code" id="NAICS_Code">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+              </select>
+          </div>
+          <div class="labels">
+              <label for="Economic_Sub_Sector_Code_ISIC">Account holder in which Sub-Sector:</label>
+              <select name="Economic_Sub_Sector_Code_ISIC" id="Economic_Sub_Sector_Code_ISIC"> </select>
+          </div>
+          <div class="labels">
+              <label for="Related_Party">Related Party:</label>
+              <select name="Related_Party" id="Related_Party">
+                <option value="Directors">Directors</option>
+                <option value="Management">Management/Senior Officer</option>
+                <option value="Non-Related-Party">Non Related Party</option>
+                <option value="Principal-Owners">Principal Owners/Shareholders/Promoters</option>
+                <option value="Staff">Staff</option>
+                <option value="Direct">Direct or indirect qualifying holding in your institution</option>
+                <option value="Direct">Direct or indirect control by your institution</option>
+                <option value="Direct">Direct or indirect control by your institution</option>
+                <option value="Spouse">Spouse, partner, or family member up to the second degree of the related persons in your institution</option>
+              </select>
+          </div>
+          <div class="labels">
+              <label for="Relationship_Type">Relationship Type:</label>
+              <select name="Relationship_Type" id="Relationship_Type">
+                <option value="Spouse">Spouse</option>
+                <option value="Husband">Husband</option>
+                <option value="Wife">Wife</option>
+                <option value="Father">Father</option>
+                <option value="Mother">Mother</option>
+                <option value="Son">Son</option>
+                <option value="Daughter">Daughter</option>
+                <option value="Brother">Brother</option>
+                <option value="Sister">Sister</option>
+                <option value="Grandfather">Grandfather</option>
+                <option value="Grandmother">Grandmother</option>
+                <option value="Grandson">Grandson</option>
+                <option value="Uncle">Uncle</option>
+                <option value="Aunt">Aunt</option>
+                <option value="Cousin">Cousin</option>
+                <option value="Nephew">Nephew</option>
+                <option value="Niece">Niece</option>
+                <option value="Father-in-law">Father-in-law</option>
+                <option value="Mother-in-law">Mother-in-law</option>
+                <option value="Brother-in-law">Brother-in-law</option>
+                <option value="Sister-in-law">Sister-in-law</option>
+                <option value="Self">Self</option>
+                <option value="Direct">Direct or indirect relationship with the bank</option>
+                <option value="Non-Related-Party">Non Related Party</option>
+              </select>
+          </div>
+          <div class="labels">
+              <label for="Related_Party_Name">Related Party Name:</label>
+              <input type="text" name="Related_Party_Name" id="Related_Party_Name">
+          </div>
+          <div class="labels">
+              <label for="SSN_Number">Social Security Number:</label>
+              <input type="number" name="SSN_Number" id="SSN_Number">
+            </div>
+          <div class="labels">
+            <label for="National_ID_Type">National ID Type:</label>
+            <select name="National_ID_Type" id="National_ID_Type">
+              <option value="driving">Driving_License</option>
+              <option value="National_ID">National_ID  (Mandatory for Rwandan Nationals)</option>
+              <option value="Refugee ID">Refugee ID</option>
+              <option value="Passport">Passport</option>
+              <option value="Foreigner's ID">Foreigner's ID</option>
+              <option value="Registration Number">Registration Number (For companies only)</option>
+            </select>
+          </div>
+          <div class="labels">
+            <label for="National_ID_Number">National ID Number:</label>
+            <input type="number" name="National_ID_Number" id="National_ID_Number">
+          </div>
+          <div class="labels">
+            <label for="Health_Insurance_Number">Health Insurance Number:</label>
+            <input type="number" name="Health_Insurance_Number" id="Health_Insurance_Number">
+          </div>
+          <div class="labels">
+            <label for="Occupation">Occupation:</label>
+            <select name="Occupation" id="Occupation"></select>
+          </div>
+          <div class="labels">
+            <label for="Employer_Name">Name of Employer:</label>
+            <input type="text" name="Employer_Name" id="Employer_Name">
+          </div>
+          <div class="labels">
+            <label for="Employee_ID">Employee ID:</label>
+            <input type="number" name="Employee_ID" id="Employee_ID">
+          </div>
+          <div class="labels">
+            <label for="Emp_Address_1">Emp Communication Line 1:</label>
+            <input type="text" name="Emp_Address_1" id="Emp_Address_1">
+          </div>
+          <div class="labels">
+            <label for="Emp_Address_2">Emp Communication Line 2:</label>
+            <input type="text" name="Emp_Address_2" id="Emp_Address_2">
+          </div>
+          <div class="labels">
+            <label for="Emp_Village">Emp Communication Village:</label>
+            <select name="Emp_Village" id="Emp_Village"></select>
+          </div>
+          <div class="labels">
+            <label for="Emp_Country">Emp Communication Country:</label>
+            <select name="Emp_Country" id="Emp_Country"></select>
+          </div>
+          <div class="labels">
+              <label for="Income">Income:</label>
+              <select name="Income" id="Income">
+                <option value="Monthly">Monthly</option>
+                <option value="Quarterly">Quarterly</option>
+                <option value="Annual">Annual</option>
+                <option value="Daily">Daily</option>
+                <option value="Weekly">Weekly</option>
+                <option value="Not Applicable">Not Applicable</option>
+              </select>
+          </div>
+          <div class="labels">
+              <label for="Income_Frequency">Income Frequency:</label>
+              <select name="Income_Frequency" id="Income_Frequency">
+                <option value="Monthly">Monthly</option>
+                <option value="Quarterly">Quarterly</option>
+                <option value="Annual">Annual</option>
+                <option value="Daily">Daily</option>
+                <option value="Weekly">Weekly</option>
+                <option value="Not Applicable">Not Applicable</option>
+              </select>
+          </div>
+          <div class="labels">
+              <label for="Legal_Status">Legal Status:</label>
+              <select name="Legal_Status" id="Legal_Status">
+                <option value="Sole Trader">Sole Trader</option>
+                <option value="Partnership">Partnership</option>
+                <option value="Private Company">Private Company</option>
+                <option value="Public Company">Public Company</option>
+                <option value="Trustee">Trustee</option>
+                <option value="Co-operatives">Co-operatives</option>
+                <option value="Non-Profit">Non-Profit Organization</option>
+              </select>
+          </div>
+          <div class="labels">
+              <label for="Customer_Status">Customer Status:</label>
+              <select name="Customer_Status" id="Customer_Status">
+                <option value="New Members in">New Members in</option>
+                <option value="Active">Active New member/Joiner/Transfers in</option>
+                <option value="Members Died">Members Died</option>
+                <option value="New Retirements">New Retirements</option>
+                <option value="New Deferred Members">New Deferred Members</option>
+                <option value="Active members exits/Transfers out">Active members exits/Transfers out</option>
+                <option value="Deferred Members In">Deferred Members In</option>
+                <option value="New Deferred Members/Transfers in">New Deferred Members/Transfers in</option>
+                <option value="Deferred Members Transferred Out">Deferred Members Transferred Out</option>
+                <option value="Deferred Members Died">Deferred Members Died</option>
+                <option value="Retirements">Retirements</option>
+                <option value="New Pensioners/Transfers In">New Pensioners/Transfers In</option>
+                <option value="Retired Pensioner died">Retired Pensioner died</option>
+                <option value="Pensioner transfers out">Pensioner transfers out</option>
+              </select>
+          </div>
+          <div class="labels">
+            <label for="Date_Last_Modified">Date Last Modified:</label>
+            <input type="date" name="date" id="Date_Last_Modified">
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+    <!-- footer section starts -->
+    <div class="container-fluid" id="footer">
+      <div class="inner-footer-content container">
+        <form class="mb-5">
+          <div class="input-container d-flex justify-content-between flex-wrap flex-md-row">
+            <div class="footerInputs flex-md-fill">
+              <div class="input-group" id="searchform">
+                <label for="">Search our website:</label>
+                <input id="footerinputs" type="text" class="footer-control" placeholder="Search..." >
+                <div class="input-group-append">
+                  <input type="submit" value="SEARCH" class="input-group-text">
+                </div>
+              </div>
+            </div>
+            <div class="footerInputs  flex-md-fill mt-2">
+              <div class="input-group" id="newsletter">
+                <label for="">Join Our newsletter:</label>
+                <input id="footerInputs" type="text" class="form-control" placeholder="Enter Your Email address">
+                <div class="input-group-append">
+                  <input type="submit" value="SIGN UP" class="input-group-text">
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="logo-menu-wrapper d-sm-flexd-lg-flex d-xl-flex justify-content-between">
+          <div class="row logo-menus d-flex flex-sm-column d flex-wrap">
+            <div class="footer-logo mb-5">
+              <img src=" https://www.prime.rw/public/themes//assets/img/svg/nav-logo-icon.svg" style="color: #fff;">
+              <div class="footer-menus col-sm-4 d-flex justify-content-start" style="line-height: 25px;">
+                <ul class="footer-menu part1-menus list-unstyled">
+                  <li><a style="font-size: 18px;color:#fff; font-family: 'Open Sans',Arial,sans-serif;text-decoration: none;" href="https://prime.rw//careers">Careers</a></li>
+                  <li><a style="font-size: 18px;color:#fff; font-family: 'Open Sans',Arial,sans-serif;text-decoration: none;" href="https://prime.rw/privacy">Privacy</a></li>
+                  <li><a style="font-size: 18px;color:#fff; font-family: 'Open Sans',Arial,sans-serif;text-decoration: none;" href="https://prime.rw/news">News</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="socialIcon-needHelp d-flex justify-content-end">
+            <div class="social-icon">
+              <a href="https://www.linkedin.com/company/prime-insurance-limited" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.facebook.com/prime.rwanda" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/primerwanda" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="need-help mb-4">
+              <div>Need to report a claim?</div>
+              <div id="claim_number">
+                <strong>call us toll free:<a style="text-decoration:none; color: #F8C83F" href="tel:1320">1320</a></strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-footer">
+      © Prime Insurance Plc 2023 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All Right Reserved Terms of Use and Privacy Policy
+    </div>
+    <!-- footer section ends -->
+
+  <script src="customer.js"></script>
+</body>
+</html>

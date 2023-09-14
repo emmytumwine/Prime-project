@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Protection Insurance</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header-content"><br><br><br>
+    <header class="header">
+      <div class="logo-toggle">
+        <img class="logo" src="https://prime.rw/public/themes//assets/img/svg/nav-logo-icon.svg" alt="">
+        <div class="toggle-icon" id="toggleNav">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="https://prime.rw/#">News</a></li>
+          <li><a href="https://prime.rw/#">Careers</a></li>
+          <li><a href="family.html">Family</a></li>
+          <li><a href="employee.html">Employee</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="customer.html">Customer-Information</a></li>
+        </ul>
+      </nav>
+      <div class="prime-icon" id="togglePrime">
+        <img src="https://prime.rw/public/themes/assets/img/svg/contact-icon-2.svg" alt="">
+        <img src="https://prime.rw/public/themes/assets/img/svg/language-icon-2.svg" alt="">
+        <img src="https://prime.rw/public/themes/assets/img/svg//icons-search-2.svg" alt="">
+      </div>
+    </header>
+  </div><br>
+  <div class="employee-protection" id="employee">
+    <div class="employee-protection-container">
+      <div class="employee-protection-input">
+        <h1 class="heading">Employee Protection Quotation</h1>
+        <form action="" class="employee-protection-form">
+          <label for="statusType">Marital Status:</label>
+          <select name="statusType" id="statusType">
+            <option value="select">...select...</option>
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label for="numberOfChildren">Number of Children:</label>
+          <input type="number" id="numberOfChildren" min="0">
+
+          <label for="numberOfDirectParents">Direct Parents:</label>
+          <select name="numberOfDirectParents" id="numberOfDirectParents">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+
+          <label for="numberOfDirectParentsInLaw">Direct Parents-in-law:</label>
+          <select name="numberOfDirectParentsInLaw" id="numberOfDirectParentsInLaw">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+
+          <label for="salaryPerMonth">Salary Per Month:</label>
+          <input type="number" id="salaryPerMonth" min="300000">
+
+          <label for="funeral">Funeral:</label>
+          <select name="funeral" id="funeral">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+
+          <label for="savings">Savings:</label>
+          <select name="savings" id="savings">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+
+          <label for="sumInsuredSharedToSpouse">Sum Shared To Spouse:</label>
+          <select name="sumInsuredSharedToSpouse" id="sumInsuredSharedToSpouse">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+
+          <label for="fees">Fees:</label>
+          <input id="feesValue" type="text" readonly value="1850">
+
+          <label for="sumInsuredRate">Sum Insured Rate:</label>
+          <select name="sumInsuredRate" id="sumInsuredRate">
+            <option value="15">15</option>
+            <option value="6">6</option>
+            <option value="12">12</option>
+            <option value="24">24</option>
+          </select>
+
+          <label for="premiumRate">Premium Rate:</label>
+          <select name="premiumRate" id="premiumRate">
+            <option value="5">5</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="10">10</option>
+          </select><br>
+          <button id="calculateButton">Calculate Premium</button>
+        </form>
+      </div>
+      <div class="premium-table" id="premiumTable">
+        <h1 class="heading">Insurance Premium</h1>
+        <div class="grid-layout">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Premium</th>
+                <th>Monthly</th>
+                <th>Annual</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Risk Premium</td>
+                <td id="riskPremiumMonthly"></td>
+                <td id="riskPremiumAnnual"></td>
+              </tr>
+              <tr>
+                <td>Saving Premium</td>
+                <td id="savingPremiumMonthly"></td>
+                <td id="savingPremiumAnnual"></td>
+              </tr>
+              <tr>
+                <td>Total Premium</td>
+                <td id="totalPremiumMonthly"></td>
+                <td id="totalPremiumAnnual"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="cover-table" id="coverTable">
+        <div class="table-1">
+          <h1 class="heading">Covers and Sums Assured</h1>
+          <div class="grid-layout">
+            <table>
+              <thead>
+                <tr>
+                  <th>Coverage Type</th>
+                  <th>PolicyHolder Sum Assured</th>
+                  <th>Spouse Sum Assured</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Death</td>
+                  <td id="deathCover"></td>
+                  <td id="deathSpouse"></td>
+                </tr>
+                <tr>
+                  <td>Permanent Disability</td>
+                  <td id="permanentDisabilityCover"></td>
+                  <td id="permanentDisabilitySpouse"></td>
+                </tr>
+                <tr>
+                  <td>Loss of Revenue</td>
+                  <td id="lossOfRevenueCover"></td>
+                  <td id="lossOfRevenueSpouse"></td>
+                </tr>
+                <tr>
+                  <td>Funeral Fees</td>
+                  <td id="funeralFeeCover"></td>
+                  <td id="funeralFeeSpouse"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <button id="hideButton">Hide Premium</button>
+      </div>
+    </div>
+  </div>
+
+    <!-- footer section starts -->
+    <div class="container-fluid" id="footer">
+      <div class="inner-footer-content container">
+        <form action="" class="mb-5">
+          <div class="input-container d-flex justify-content-between flex-wrap flex-md-row">
+            <div class="footerInputs flex-md-fill">
+              <div class="input-group" id="searchform">
+                <label for="">Search our website:</label>
+                <input id="footerinputs" type="text" class="footer-control" placeholder="Search..." >
+                <div class="input-group-append">
+                  <input type="submit" value="SEARCH" class="input-group-text">
+                </div>
+              </div>
+            </div>
+            <div class="footerInputs  flex-md-fill mt-2">
+              <div class="input-group" id="newsletter">
+                <label for="">Join Our newsletter:</label>
+                <input id="footerInputs" type="text" class="form-control" placeholder="Enter Your Email address">
+                <div class="input-group-append">
+                  <input type="submit" value="SIGN UP" class="input-group-text">
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="logo-menu-wrapper d-sm-flexd-lg-flex d-xl-flex justify-content-between">
+          <div class="row logo-menus d-flex flex-sm-column d flex-wrap">
+            <div class="footer-logo mb-5">
+              <img src=" https://www.prime.rw/public/themes//assets/img/svg/nav-logo-icon.svg" alt="">
+              <div class="footer-menus col-sm-4 d-flex justify-content-start" style="line-height: 25px;">
+                <ul class="footer-menu part1-menus list-unstyled">
+                  <li><a style="font-size: 18px;color:#fff; font-family: 'Open Sans',Arial,sans-serif;text-decoration: none;" href="https://prime.rw//careers">Careers</a></li>
+                  <li><a style="font-size: 18px;color:#fff; font-family: 'Open Sans',Arial,sans-serif;text-decoration: none;" href="https://prime.rw/privacy">Privacy</a></li>
+                  <li><a style="font-size: 18px;color:#fff; font-family: 'Open Sans',Arial,sans-serif;text-decoration: none;" href="https://prime.rw/news">News</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="socialIcon-needHelp d-flex justify-content-end">
+            <div class="social-icon">
+              <a href="https://www.linkedin.com/company/prime-insurance-limited" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.facebook.com/prime.rwanda" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/primerwanda" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="need-help mb-4">
+              <div>Need to report a claim?</div>
+              <div id="claim_number">
+                <strong>call us toll free:<a style="text-decoration:none; color: #F8C83F" href="tel:1320">1320</a></strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-footer">
+      © Prime Insurance Plc
+      2023 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All Right Reserved Terms of Use and Privacy Policy
+    </div>
+    <!-- footer section ends -->
+  <script src="employee.js"></script>
+</body>
+</html>
